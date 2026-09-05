@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://mediator-yurist.ru/</loc>
+        <lastmod>2026-01-01</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://mediator-yurist.ru/spb/</loc>
+        <lastmod>2026-01-01</lastmod>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://mediator-yurist.ru/kazan/</loc>
+        <lastmod>2026-01-01</lastmod>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://mediator-yurist.ru/orenburg/</loc>
+        <lastmod>2026-01-01</lastmod>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://mediator-yurist.ru/ekaterinburg/</loc>
+        <lastmod>2026-01-01</lastmod>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://mediator-yurist.ru/nnovgorod/</loc>
+        <lastmod>2026-01-01</lastmod>
+        <priority>0.90</priority>
+    </url>
+</urlset>

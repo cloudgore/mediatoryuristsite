@@ -1,0 +1,2 @@
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule ^(.*)$ https://mediator-yurist.ru/index.html [R=301,L]
