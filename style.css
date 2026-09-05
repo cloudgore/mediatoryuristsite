@@ -1769,52 +1769,370 @@ textarea{
     .cta-box h2{ font-size:38px; }
     .contacts-form{ padding:30px; }
     .footer-grid{ grid-template-columns:1fr; gap:40px; }
- 
 
 }
 
-/* 576px */
+/* =====================================================
+   НОВЫЕ УЛУЧШЕННЫЕ МЕДИА-ЗАПРОСЫ ДЛЯ СМАРТФОНОВ
+   ===================================================== */
+
+/* 576px - основные смартфоны */
 @media(max-width:576px){
 
+    /* Шапка */
     .header .container{ height:78px; }
     .logo-text span{ display:none; }
+    .logo-icon{ width:44px; height:44px; font-size:20px; }
+    .logo-text strong{ font-size:16px; }
 
+    /* Hero - полная перестройка */
     .hero{
-        padding:130px 0 70px;
+        padding:130px 0 60px;
     }
 
-    .hero h1{ font-size:36px; }
-    .hero-description{ font-size:17px; }
-    .hero-stats{ gap:25px; }
-    .stat strong{ font-size:30px; }
+    .hero h1{ 
+        font-size:34px; 
+        line-height:1.15;
+    }
+    
+    .hero h1 span{
+        display:inline;
+    }
 
-    .section-title{ margin-bottom:50px; }
-    .section-title h2{ font-size:30px; }
+    .hero-description{ 
+        font-size:16px; 
+        line-height:1.7;
+    }
 
+    .hero-label{
+        font-size:13px;
+        padding:8px 16px;
+        margin-bottom:20px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        gap:12px;
+        margin:30px 0;
+    }
+
+    .hero-buttons .btn{
+        width:100%;
+        padding:16px 24px;
+        font-size:15px;
+    }
+
+    /* Статистика — компактно в ряд */
+    .hero-stats{ 
+        gap:16px;
+        justify-content:space-around;
+        flex-wrap:nowrap;
+    }
+
+    .stat strong{ 
+        font-size:28px; 
+    }
+
+    .stat span{ 
+        font-size:13px; 
+    }
+
+    /* Изображение — круглое, но меньше */
+    .hero-image{
+        width:300px;
+        height:300px;
+        margin:30px auto 0;
+    }
+
+    .hero-image img{
+        width:260px;
+        height:260px;
+        left:20px;
+        top:20px;
+        border-radius:50%;
+        object-fit:cover;
+    }
+
+    /* Карточка поверх фото */
+    .hero-card{
+        right:0;
+        bottom:0;
+        padding:16px 20px;
+        border-radius:16px;
+    }
+
+    .hero-card strong{
+        font-size:14px;
+    }
+
+    .hero-card span{
+        font-size:12px;
+    }
+
+    /* Секции */
+    .section-title{ 
+        margin-bottom:40px; 
+    }
+    
+    .section-title h2{ 
+        font-size:28px; 
+    }
+    
+    .section-title p{ 
+        font-size:17px; 
+    }
+
+    /* Карточки */
     .service-card,
     .case-card,
     .review-card,
     .benefit-card,
     .process-item,
     .blog-card{
-        padding:28px;
+        padding:24px 20px;
     }
 
-    .contacts-info h2{ font-size:34px; }
-    .contact-item a{ font-size:20px; }
-    .cta-box h2{ font-size:30px; }
-    .btn{ padding:16px 24px; font-size:15px; }
+    .service-card h3{ 
+        font-size:22px; 
+    }
+    
+    .service-card p{ 
+        min-height:auto; 
+        font-size:15px;
+    }
+    
+    .service-number{
+        width:48px;
+        height:48px;
+        font-size:18px;
+        margin-bottom:20px;
+    }
 
-    .hero-circle{
-        width:340px;
-        height:340px;
+    /* Процесс */
+    .process-number{ 
+        font-size:40px; 
+    }
+    
+    .process-item h3{ 
+        font-size:22px; 
+    }
+
+    /* Преимущества */
+    .benefit-card h3{ 
+        font-size:24px; 
+    }
+
+    /* Кейсы */
+    .case-card h3{ 
+        font-size:20px; 
+    }
+
+    /* Блог */
+    .blog-card h3{ 
+        font-size:20px; 
+    }
+
+    /* FAQ */
+    .faq-item summary{
+        padding:20px 45px 20px 20px;
+        font-size:18px;
+    }
+    
+    .faq-item summary::after{
+        right:20px;
+        font-size:24px;
+    }
+    
+    .faq-item p{
+        padding:0 20px 20px;
+        font-size:15px;
+    }
+
+    /* CTA */
+    .cta-box{ 
+        padding:40px 20px; 
+        border-radius:24px;
+    }
+    
+    .cta-box h2{ 
+        font-size:28px; 
+    }
+    
+    .cta-box p{ 
+        font-size:17px; 
+        margin-bottom:30px;
+    }
+
+    /* Контакты */
+    .contacts-info h2{ 
+        font-size:30px; 
+    }
+    
+    .contact-item a{ 
+        font-size:18px; 
+    }
+    
+    .contacts-form{ 
+        padding:24px 18px; 
+        border-radius:20px;
+    }
+
+    .form-group input,
+    .form-group textarea{
+        padding:14px;
+        font-size:15px;
+    }
+
+    /* Кнопка назад */
+    .back-to-top{
+        right:16px;
+        bottom:16px;
+        width:46px;
+        height:46px;
+        font-size:20px;
+    }
+
+    /* Уведомления */
+    .notification{
+        top:16px;
+        right:16px;
+        left:16px;
+        padding:14px 18px;
+        font-size:14px;
+    }
+}
+
+/* 400px - очень маленькие экраны */
+@media(max-width:400px){
+
+    .hero h1{ 
+        font-size:28px; 
+    }
+
+    .hero-description{ 
+        font-size:15px; 
+    }
+
+    /* Статистика — вертикально */
+    .hero-stats{ 
+        flex-direction:column;
+        gap:10px;
+        align-items:stretch;
+    }
+
+    .stat{
+        display:flex;
+        justify-content:space-between;
+        align-items:baseline;
+        padding:8px 0;
+        border-bottom:1px solid rgba(0,0,0,.05);
+    }
+
+    .stat:last-child{
+        border-bottom:none;
+    }
+
+    .stat strong{ 
+        font-size:22px; 
+    }
+
+    .stat span{ 
+        font-size:14px; 
+    }
+
+    /* Изображение ещё меньше */
+    .hero-image{
+        width:240px;
+        height:240px;
     }
 
     .hero-image img{
-        width:300px;
-        height:300px;
-        border-radius:50%;
-        object-fit:cover;
+        width:200px;
+        height:200px;
+        left:20px;
+        top:20px;
     }
 
+    .hero-card{
+        padding:12px 16px;
+        right:0;
+        bottom:0;
+    }
+
+    .hero-card strong{
+        font-size:12px;
+    }
+
+    .hero-card span{
+        font-size:11px;
+    }
+
+    .section-title h2{ 
+        font-size:24px; 
+    }
+    
+    .section-title p{ 
+        font-size:15px; 
+    }
+
+    .btn{
+        padding:14px 20px;
+        font-size:14px;
+    }
+
+    .cta-box h2{ 
+        font-size:24px; 
+    }
+
+    .contacts-info h2{ 
+        font-size:26px; 
+    }
+
+    .contact-item a{ 
+        font-size:16px; 
+    }
+}
+
+/* 360px - экстремально маленькие */
+@media(max-width:360px){
+
+    .hero h1{ 
+        font-size:24px; 
+    }
+
+    .hero-description{ 
+        font-size:14px; 
+    }
+
+    .hero-image{
+        width:200px;
+        height:200px;
+    }
+
+    .hero-image img{
+        width:170px;
+        height:170px;
+        left:15px;
+        top:15px;
+    }
+
+    .hero-card{
+        display:none;
+    }
+
+    .stat strong{ 
+        font-size:20px; 
+    }
+
+    .stat span{ 
+        font-size:12px; 
+    }
+
+    .section-title h2{ 
+        font-size:22px; 
+    }
+
+    .service-card h3{ 
+        font-size:20px; 
+    }
 }
