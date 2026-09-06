@@ -1,23 +1,8 @@
-# Разрешить всем поисковым роботам доступ ко всем страницам
 User-agent: *
+
 Allow: /
 
-# Указание пути к карте сайта
-Sitemap: https://mediator-yurist.ru/sitemap.xml
-
-# Запрет индексации служебных директорий (на случай, если они появятся в будущем)
-Disallow: /assets/
-Disallow: /images/
-Disallow: /css/
-Disallow: /js/
-
-# Запрет обработки параметров сессии и мусорных параметров
-Disallow: /*?*
 Disallow: /*.pdf$
 Disallow: /*.zip$
 
-# Задержка между запросами для снижения нагрузки на сервер
-Crawl-delay: 5
-
-# Указание основного зеркала сайта (без www)
-Host: https://mediator-yurist.ru/index.html
+Sitemap: https://mediator-yurist.ru/sitemap.xml
