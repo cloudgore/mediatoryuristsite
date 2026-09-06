@@ -510,30 +510,27 @@ textarea{
 }
 
 .services-grid{
-
     display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
+    grid-template-columns:repeat(2, minmax(280px, 394px));
     gap:30px;
-
+    justify-content:center;
 }
 
 .service-card{
-
     background:#fff;
-
     border-radius:24px;
-
     padding:40px;
-
     transition:.35s;
-
     box-shadow:0 10px 30px rgba(0,0,0,.04);
-
     border:1px solid transparent;
 
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 }
+
 
 .service-card:hover{
 
@@ -580,13 +577,9 @@ textarea{
 }
 
 .service-card p{
-
     color:var(--gray);
-
-    margin-bottom:30px;
-
-    min-height:110px;
-
+    margin-bottom:0;
+    min-height:auto;
 }
 
 .service-card a{
@@ -794,27 +787,21 @@ textarea{
 }
 
 .benefits-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    gap:30px;
-
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
 }
 
 .benefit-card{
+padding:40px;
+border-radius:24px;
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.08);
+transition:.3s;
 
-    padding:40px;
-
-    border-radius:24px;
-
-    background:rgba(255,255,255,.05);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    transition:.3s;
-
+display:flex;
+flex-direction:column;
+justify-content:center;
 }
 
 .benefit-card:hover{
