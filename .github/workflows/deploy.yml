@@ -5,6 +5,8 @@ on:
     branches:
       - main
 
+  workflow_dispatch:
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -13,11 +15,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy entire site to REG.RU
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: / 
-          
+
+          # Папка сайта на REG.RU
+          server-dir: /
+
+          # Не используем старое состояние синхронизации
+          state-name: .ftp-deploy-sync-state.json
+
+          # Не удаляем файлы на сервере, которых нет в Git
+          dangerous-clean-slate: false
+
+          # Показывать подробный лог
+          log-level: standard
